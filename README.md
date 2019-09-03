@@ -22,4 +22,4 @@ Light sensing using photoresistors
   Digital pin 13 hooks up to posistive side of LED
 
 
-
+![alt text](https://github.com/DanielsKraus/Light-sensing/blob/master/arduino_photoresistor_wiring.PNG)
