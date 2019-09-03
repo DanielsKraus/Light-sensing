@@ -1,23 +1,25 @@
-int lightPin = 0;  //define a pin for Photo resistor
+int lightPin = A0;     //define a pin for Photoresistor
 int threshold = 250;
-
+int light = 13;        // Digital ouin 13
+ 
 void setup(){
     Serial.begin(9600);  //Begin serial communcation
-    pinMode(13, OUTPUT);
+    pinMode(light, OUTPUT);
 
 }
 
 void loop(){
-    values = analogRead(lightPin)
+    int values = analogRead(lightPin);
     Serial.println(values); 
 
-    if(values > threshold ){    
-        digitalWrite(13, HIGH);
+    if(values > threshold){    
+        digitalWrite(light, HIGH);
         Serial.println("high"); 
-    }else{
-        digitalWrite(13, LOW);
+      }
+    else{
+        digitalWrite(light, LOW);
         Serial.println("low"); 
-    }
+      }
 
     delay(100);
 }
