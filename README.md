@@ -20,3 +20,6 @@ Light sensing using photoresistors
   Then A0 wire hooks up to photoresistor
   place 100 ohm resistor inbetween GND and LED
   Digital pin 13 hooks up to posistive side of LED
+
+
+
